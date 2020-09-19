@@ -1,184 +1,30 @@
 [1;31m
 Start test 1[0m
-Input the number of cards:
+"Input the number of mappedCards:
 > 2
 The card #1:
 > black
  The definition of the card #1:
 > white
 The card #2:
-> white
- The definition of the card #2:
 > black
+-The card "black" already exists. Try again:
+> red
+ The definition of the card #2:
+> white
+3The definition "white" already exists. Try again:
+> green
 "Print the definition of "black":
 > white
 
 Correct!
-"Print the definition of "white":
-> blue
-%Wrong. The right answer is "black".
+ Print the definition of "red":
+> green
 
-askLines:
-!Print the definition of "black":
-	Correct!
-!Print the definition of "white":
-%Wrong. The right answer is "black".
+Correct!
 [1;31m
 Start test 2[0m
-Input the number of cards:
-> 5
-The card #1:
-> a
- The definition of the card #1:
-> a
-The card #2:
-> 2
- The definition of the card #2:
-> 2
-The card #3:
-> 3
- The definition of the card #3:
-> 3
-The card #4:
-> 4
- The definition of the card #4:
-> 4
-The card #5:
-> 5
- The definition of the card #5:
-> 5
-Print the definition of "a":
-> a
-
-Correct!
-Print the definition of "2":
-> 2
-
-Correct!
-Print the definition of "3":
-> 3
-
-Correct!
-Print the definition of "4":
-> 4
-
-Correct!
-Print the definition of "5":
-> 5
-
-Correct!
-
-askLines:
-Print the definition of "a":
-	Correct!
-Print the definition of "2":
-	Correct!
-Print the definition of "3":
-	Correct!
-Print the definition of "4":
-	Correct!
-Print the definition of "5":
-
-Correct!
-[1;31m
-Start test 3[0m
-Input the number of cards:
-> 5
-The card #1:
-> 1
- The definition of the card #1:
-> 1
-The card #2:
-> 2
- The definition of the card #2:
-> 2
-The card #3:
-> 3
- The definition of the card #3:
-> 3
-The card #4:
-> 4
- The definition of the card #4:
-> 4
-The card #5:
-> 5
- The definition of the card #5:
-> 5
-Print the definition of "1":
-> 5
-!Wrong. The right answer is "1".
-Print the definition of "2":
-> 4
-!Wrong. The right answer is "2".
-Print the definition of "3":
-> 3
-
-Correct!
-Print the definition of "4":
-> 2
-!Wrong. The right answer is "4".
-Print the definition of "5":
-> 1
-!Wrong. The right answer is "5".
-
-askLines:
-Print the definition of "1":
- Wrong. The right answer is "1".
-Print the definition of "2":
- Wrong. The right answer is "2".
-Print the definition of "3":
-	Correct!
-Print the definition of "4":
- Wrong. The right answer is "4".
-Print the definition of "5":
-!Wrong. The right answer is "5".
-[1;31m
-Start test 4[0m
-Input the number of cards:
-> 4
-The card #1:
-> 11
- The definition of the card #1:
-> 21
-The card #2:
-> 12
- The definition of the card #2:
-> 22
-The card #3:
-> 13
- The definition of the card #3:
-> 23
-The card #4:
-> 14
- The definition of the card #4:
-> 24
-Print the definition of "11":
-> 21
-
-Correct!
-Print the definition of "12":
-> 22
-
-Correct!
-Print the definition of "13":
-	> 333333
-"Wrong. The right answer is "23".
-Print the definition of "14":
-> 34
-"Wrong. The right answer is "24".
-
-askLines:
-Print the definition of "11":
-	Correct!
-Print the definition of "12":
-	Correct!
-Print the definition of "13":
-!Wrong. The right answer is "23".
-Print the definition of "14":
-"Wrong. The right answer is "24".
-[1;31m
-Start test 5[0m
-Input the number of cards:
+"Input the number of mappedCards:
 > 2
 The card #1:
 > a brother of one's parent
@@ -190,13 +36,53 @@ askLines:
 > ankle
 6Print the definition of "a brother of one's parent":
 > ankle
-%Wrong. The right answer is "uncle".
+|Wrong. The right answer is "uncle",but your definition is correct for "a part of the body where the foot and the leg meet"
 OPrint the definition of "a part of the body where the foot and the leg meet":
-> ??
-%Wrong. The right answer is "ankle".
+> ???
+NWrong. The right answer is "ankle",but your definition is correct for "null"
+[1;31m
+Start test 3[0m
+"Input the number of mappedCards:
+> 4
+The card #1:
+> c1
+ The definition of the card #1:
+> d1
+The card #2:
+> c2
+ The definition of the card #2:
+> d2
+The card #3:
+> c3
+ The definition of the card #3:
+> d3
+The card #4:
+> c3
+*The card "c3" already exists. Try again:
+> c2
+*The card "c2" already exists. Try again:
+> c1
+*The card "c1" already exists. Try again:
+> c4
+ The definition of the card #4:
+> d2
+0The definition "d2" already exists. Try again:
+> d3
+0The definition "d3" already exists. Try again:
+> d1
+0The definition "d1" already exists. Try again:
+> d4
+Print the definition of "c1":
+> d1
 
-askLines:
-5Print the definition of "a brother of one's parent":
-$Wrong. The right answer is "uncle".
-NPrint the definition of "a part of the body where the foot and the leg meet":
-%Wrong. The right answer is "ankle".
+Correct!
+Print the definition of "c2":
+> d1
+IWrong. The right answer is "d2",but your definition is correct for "c1"
+Print the definition of "c3":
+
+> d3 ddd3
+KWrong. The right answer is "d3",but your definition is correct for "null"
+Print the definition of "c4":
+> ???
+KWrong. The right answer is "d4",but your definition is correct for "null"
